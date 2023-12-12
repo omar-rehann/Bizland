@@ -1,0 +1,165 @@
+/* start landing */
+.landing{
+    background-image: url(img/hero-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+.landing .over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,50%);
+    z-index: -1;
+}
+.landing .continer{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    /* transform: translate(-50%,-50%); */
+    line-height: 2;
+    padding: 10px;
+    width: 100%;
+}
+/* end landing */
+/* start before */
+.before .continer .box{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+.before .continer .box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: blue;
+    left: 0;
+    bottom: 0;
+    transition: 0.6s;
+    color: white;
+    
+}
+.before .continer .box:hover::before{
+    height: 100%;
+    background-color: blue;
+    color: white !important;
+}
+.before .continer .box:hover .text{
+    color: white !important;
+    position: relative;
+    z-index: 2 !important;
+}
+.before .continer .box:hover .text i{
+    color: white !important;
+    position: relative;
+    z-index: 2 !important;
+}
+
+/* end before */
+/* start serice */
+.service{
+    margin-top: 20px;
+
+}
+.service .content{
+    margin-top: 10px;
+}
+.service .content .box{
+    border:  solid 2px rgb(0,0, 0,4%);
+    opacity: 1;
+    margin: 4px;
+    padding: 15px;
+}
+.service .content .box i{
+    background-color: #e2dddd;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin:  0 auto;
+    border-radius: 4px;
+}
+/* ena service */
+/* start team */
+.team .continet .card{
+    position: relative;
+    transition: 0.5s;
+
+}
+.team .content .card .icon{
+    position: absolute;
+    /* top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    margin-right: 4px;
+    transition: 0.3s;
+    visibility: hidden;
+}
+.team .content .card:hover .icon{
+    visibility: visible;
+}
+.team .content .card .icon i{
+    margin-right: 5px;
+    transition: 0.5s;
+}
+/* end team */
+/* start pricing */
+.pricing{
+    margin-top: 10px;
+}
+.pricing .content .row div:nth-child(4){
+    position: relative;
+    overflow: hidden;
+}
+.pricing .content .row div:nth-child(4)::before{
+    content: "POPULAR";
+    position: absolute;
+    color: white;
+    background-color: blue;
+    z-index: 2;
+    right: 20px;
+    top: 5px;
+    overflow: hidden;
+    padding: 9px;
+    margin: 0px;
+    transform: rotate(0deg);
+    width:fit-content;
+    text-align: center;
+    font-size: 15px;
+    height: 120px;
+    writing-mode: vertical-lr;
+
+}
+.pricing .content .row div:nth-child(4)::after{
+    content: "";
+    position: absolute;
+    top: 86px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    z-index: 2;
+    border-color: transparent transparent white transparent;
+    transition: 0.6s;
+
+}
+.pricing .content .row div:nth-child(4):hover::before{
+    background-color: red;
+}
+/* end pricing */
+/* start contact */
+
+/* end contact */
